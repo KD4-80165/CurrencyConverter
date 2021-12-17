@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Lora:ital,wght@1,400;1,500&family=Playfair+Display:ital,wght@0,400;1,400;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #2d2d37;
+}
+.wrapper{
+    width: 370px;
+    padding: 30px;
+    border-radius: 7px;
+    background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png)
+}
+.wrapper header{
+    font-size: 29px;
+    text-align: center;
+}
+.wrapper form{
+    margin: 40px 0 20px 0;
+}
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+form p{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+form input{
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 2px solid #999;
+    background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+}
+form input:focus{
+    border: 2px solid black;
+}
+form .drop-list{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-list .select-box{
+    display: flex;
+    height: 45px;
+    width: 115px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: gray;
+}
+.select-box select{
+    width: auto;
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+    background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+}
+.select-box select::-webkit-scrollbar{
+    width: 8px;
+}
+.select-box select::-webkit-scrollbar-track{
+    background: white;
+}
+.select-box select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid white;
+}
+/* .select-box img{
+    max-width: 90px;
+    height: 30px;
+} */
+.flag{
+    height: 40px;
+    width: 60px;
+}
+.drop-list .icon{
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 30px;
+}
+form .exchange-rate{
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+form button{
+    height: 52px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    background: rgb(0, 218, 218);
+}
+form button:hover{
+    text-shadow: 4px 4px 8px rgb(179, 0, 74);
+    box-shadow: 2px 2px 15px 2px rgb(150, 247, 247);
+    background-color: rgb(18, 218, 218);
+}
